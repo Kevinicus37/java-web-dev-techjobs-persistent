@@ -15,7 +15,7 @@ public abstract class AbstractEntity {
     private int id;
 
     @NotEmpty
-    @Size(min=3, max = 100, message="Name must be between 10 and 100 characters.")
+    @Size(max = 150, message="Exceeded limit of 100 characters.")
     private String name;
 
     public int getId() {
